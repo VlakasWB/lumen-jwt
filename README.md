@@ -1,24 +1,56 @@
-# Lumen PHP Framework
+#ENGLISH
+This project already has an auth token sanctum register, login and logout
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
+HOW TO WORK
+1. cp .env.example .env
+2. Edit .env
+3. DB_DATABASE=your-database-name
+4. DB_USERNAME=your-database-username
+5. DB_PASSWORD=your-database-password
+6. composer update
+7. php artisan jwt:secret
+8. php -S localhost:8000 -t public
+9. Check on Postman
+10. Don't forget uncomment code route get /key (in folder routes file web.php) for APP KEY
+11. Open browser http://localhost:8000/key
+12. Copy to .env in APP_KEY=
+13. Finish!
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+============
 
-## Official Documentation
+#INDONESIA
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+Proyek ini sudah memiliki auth token sanctum register, login dan logout
 
-## Contributing
+CARA MENGGUNAKAN
+1. cp .env.example .env
+2. Edit DB_DATABASE=nama-database-kamu
+3. composer update
+4. php artisan serve
+5. Cek di Postman
+6. composer update
+7. php artisan jwt:secret
+8. php -S localhost:8000 -t public
+9. Check on Postman
+10. Jangan lupa buka comment kode route yang get /key (Di dalam folder routes file web.php) untuk nanti di isi pada APP_KEY
+11. Open browser http://localhost:8000/key
+12. Copy to .env in APP_KEY=
+13. Selesai!
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+#POSTMAN
 
-## Security Vulnerabilities
+- REGISTER
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+![image](https://user-images.githubusercontent.com/77152618/142194895-b3d569b9-bb78-44cf-bf2b-f53fc58e4e73.png)
 
-## License
+- LOGIN
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+![image](https://user-images.githubusercontent.com/77152618/142194934-38d58e27-4618-4fc6-a970-ef62bf0173d2.png)
+
+- LOGOUT
+
+![image](https://user-images.githubusercontent.com/77152618/142195031-b4c1f086-02e9-48a0-a2b5-e05a09051432.png)
+
+- GET USER
+
+![image](https://user-images.githubusercontent.com/77152618/142194986-af84fefa-efa3-49c6-8d19-a6ae098ac3ec.png)
